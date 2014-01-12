@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20AF4DC4188219C300CF4470 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AF4DC3188219C300CF4470 /* MovieViewController.m */; };
 		20C4AFB9187CE47E004183CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFB8187CE47E004183CE /* Foundation.framework */; };
 		20C4AFBB187CE47E004183CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFBA187CE47E004183CE /* CoreGraphics.framework */; };
 		20C4AFBD187CE47E004183CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFBC187CE47E004183CE /* UIKit.framework */; };
@@ -14,13 +15,13 @@
 		20C4AFC5187CE47E004183CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C4AFC4187CE47E004183CE /* main.m */; };
 		20C4AFC9187CE47E004183CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C4AFC8187CE47E004183CE /* AppDelegate.m */; };
 		20C4AFCC187CE47E004183CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C4AFCA187CE47E004183CE /* Main.storyboard */; };
-		20C4AFCF187CE47E004183CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C4AFCE187CE47E004183CE /* ViewController.m */; };
 		20C4AFD1187CE47E004183CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C4AFD0187CE47E004183CE /* Images.xcassets */; };
 		20C4AFD8187CE47E004183CE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFD7187CE47E004183CE /* XCTest.framework */; };
 		20C4AFD9187CE47E004183CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFB8187CE47E004183CE /* Foundation.framework */; };
 		20C4AFDA187CE47E004183CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFBC187CE47E004183CE /* UIKit.framework */; };
 		20C4AFE2187CE47E004183CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20C4AFE0187CE47E004183CE /* InfoPlist.strings */; };
 		20C4AFE4187CE47E004183CE /* ShowBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C4AFE3187CE47E004183CE /* ShowBoxTests.m */; };
+		20C4AFF7187CE5CE004183CE /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C4AFF6187CE5CE004183CE /* MovieListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20AF4DC2188219C300CF4470 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		20AF4DC3188219C300CF4470 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		20C4AFB5187CE47E004183CE /* ShowBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C4AFB8187CE47E004183CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		20C4AFBA187CE47E004183CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +48,14 @@
 		20C4AFC7187CE47E004183CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20C4AFC8187CE47E004183CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		20C4AFCB187CE47E004183CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		20C4AFCD187CE47E004183CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		20C4AFCE187CE47E004183CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20C4AFD0187CE47E004183CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		20C4AFD6187CE47E004183CE /* ShowBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C4AFD7187CE47E004183CE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		20C4AFDF187CE47E004183CE /* ShowBoxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShowBoxTests-Info.plist"; sourceTree = "<group>"; };
 		20C4AFE1187CE47E004183CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20C4AFE3187CE47E004183CE /* ShowBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowBoxTests.m; sourceTree = "<group>"; };
+		20C4AFF5187CE5CE004183CE /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		20C4AFF6187CE5CE004183CE /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 				20C4AFC7187CE47E004183CE /* AppDelegate.h */,
 				20C4AFC8187CE47E004183CE /* AppDelegate.m */,
 				20C4AFCA187CE47E004183CE /* Main.storyboard */,
-				20C4AFCD187CE47E004183CE /* ViewController.h */,
-				20C4AFCE187CE47E004183CE /* ViewController.m */,
 				20C4AFD0187CE47E004183CE /* Images.xcassets */,
 				20C4AFBF187CE47E004183CE /* Supporting Files */,
+				20C4AFF5187CE5CE004183CE /* MovieListViewController.h */,
+				20C4AFF6187CE5CE004183CE /* MovieListViewController.m */,
+				20AF4DC2188219C300CF4470 /* MovieViewController.h */,
+				20AF4DC3188219C300CF4470 /* MovieViewController.m */,
 			);
 			path = ShowBox;
 			sourceTree = "<group>";
@@ -249,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C4AFCF187CE47E004183CE /* ViewController.m in Sources */,
 				20C4AFC9187CE47E004183CE /* AppDelegate.m in Sources */,
 				20C4AFC5187CE47E004183CE /* main.m in Sources */,
+				20C4AFF7187CE5CE004183CE /* MovieListViewController.m in Sources */,
+				20AF4DC4188219C300CF4470 /* MovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				20C4AFE9187CE47E004183CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20C4AFEA187CE47E004183CE /* Build configuration list for PBXNativeTarget "ShowBoxTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				20C4AFEC187CE47E004183CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MovieListViewController.h
 //  ShowBox
 //
 //  Created by Tao Xia on 1/7/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MovieListViewController : UITableViewController
 
 @end
