@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203644BF1883488D00DD29E6 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 203644BE1883488D00DD29E6 /* MovieCell.m */; };
 		20AF4DC4188219C300CF4470 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AF4DC3188219C300CF4470 /* MovieViewController.m */; };
 		20C4AFB9187CE47E004183CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFB8187CE47E004183CE /* Foundation.framework */; };
 		20C4AFBB187CE47E004183CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C4AFBA187CE47E004183CE /* CoreGraphics.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203644BD1883488D00DD29E6 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		203644BE1883488D00DD29E6 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		20AF4DC2188219C300CF4470 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
 		20AF4DC3188219C300CF4470 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		20C4AFB5187CE47E004183CE /* ShowBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +127,8 @@
 				20C4AFF6187CE5CE004183CE /* MovieListViewController.m */,
 				20AF4DC2188219C300CF4470 /* MovieViewController.h */,
 				20AF4DC3188219C300CF4470 /* MovieViewController.m */,
+				203644BD1883488D00DD29E6 /* MovieCell.h */,
+				203644BE1883488D00DD29E6 /* MovieCell.m */,
 			);
 			path = ShowBox;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C4AFC9187CE47E004183CE /* AppDelegate.m in Sources */,
+				203644BF1883488D00DD29E6 /* MovieCell.m in Sources */,
 				20C4AFC5187CE47E004183CE /* main.m in Sources */,
 				20C4AFF7187CE5CE004183CE /* MovieListViewController.m in Sources */,
 				20AF4DC4188219C300CF4470 /* MovieViewController.m in Sources */,

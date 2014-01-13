@@ -7,6 +7,7 @@
 //
 
 #import "MovieListViewController.h"
+#import "MovieCell.h"
 
 @interface MovieListViewController ()
 
@@ -79,14 +80,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    static NSString *CellIdentifier = @"MovieCell";
+    MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    if(!cell){
+        cell = [[MovieCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     // Configure the cell...
     NSDictionary *movie =  [self.movies objectAtIndex:indexPath.row];
-    cell.textLabel.text = [movie objectForKey:@"title"];
-    
-    
+    //cell.textLabel.text = [movie objectForKey:@"title"];
+    cell.movieTitle.text = [movie objectForKey:@"title"];
+    cell.movieSummary.text = [movie objectForKey:@"synopsis"];
+    NSURL * imageURL = [NSURL URLWithString:[[movie objectForKey: @"posters"] objectForKey:@"original"]];
+    NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
+    UIImage * image = [UIImage imageWithData:imageData];
+
+    cell.movieImage.image = image;
     return cell;
 }
 
