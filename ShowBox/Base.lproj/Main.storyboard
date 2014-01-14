@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Movie List View Controller-->
+        <!--Movie List View Controller - Movie List-->
         <scene sceneID="lHd-UA-Hsn">
             <objects>
                 <tableViewController id="fTe-ye-Zrh" customClass="MovieListViewController" sceneMemberID="viewController">
@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" rowHeight="163" id="8Pb-Gj-OMc" customClass="MovieCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" rowHeight="163" id="8Pb-Gj-OMc" customClass="MovieCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="163"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Pb-Gj-OMc" id="ev8-20-xSO">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="162"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCn-ph-OEq">
@@ -31,7 +31,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="186" translatesAutoresizingMaskIntoConstraints="NO" id="Brl-Yh-oSG">
-                                            <rect key="frame" x="114" y="49" width="186" height="102"/>
+                                            <rect key="frame" x="114" y="50" width="186" height="102"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="highlightedColor"/>
@@ -42,6 +42,7 @@
                                     <outlet property="movieImage" destination="dCn-ph-OEq" id="6ue-JV-ABP"/>
                                     <outlet property="movieSummary" destination="Brl-Yh-oSG" id="0Ig-QR-RMV"/>
                                     <outlet property="movieTitle" destination="Sbc-B5-EYe" id="fla-TQ-E1S"/>
+                                    <segue destination="6Ac-rE-s8N" kind="push" id="37d-id-T9H"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -50,11 +51,54 @@
                             <outlet property="delegate" destination="fTe-ye-Zrh" id="Ruu-FQ-k7h"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="wdk-xO-xOZ"/>
+                    <navigationItem key="navigationItem" title="Movie List" id="wdk-xO-xOZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLP-sI-KGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="641" y="-576"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="AbM-xS-PUD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdq-i4-H39" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="6Ac-rE-s8N" customClass="MovieViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UWi-GV-QoH"/>
+                        <viewControllerLayoutGuide type="bottom" id="mIC-NS-zDd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6KI-JO-WfO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bx3-dG-iLJ">
+                                <rect key="frame" x="5" y="71" width="311" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="miV-cw-OFw">
+                                        <rect key="frame" x="46" y="20" width="218" height="273"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="rzv-Kp-9tS">
+                                        <rect key="frame" x="15" y="301" width="280" height="213"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xQE-9l-lkY"/>
+                    <connections>
+                        <outlet property="Description" destination="rzv-Kp-9tS" id="WmB-UM-SgA"/>
+                        <outlet property="description" destination="rzv-Kp-9tS" id="bS3-Xf-wJN"/>
+                        <outlet property="moiveImage" destination="miV-cw-OFw" id="6gE-17-4Ni"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1102" y="-576"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tAf-0M-Jt9">

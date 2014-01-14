@@ -10,6 +10,9 @@
 
 @interface MovieViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *moiveImage;
+@property (weak, nonatomic) IBOutlet UILabel *description;
+
 @end
 
 @implementation MovieViewController
@@ -27,6 +30,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSUserDefaults *store = [NSUserDefaults standardUserDefaults];
+    NSData* imageData = [store objectForKey:@"image"];
+    UIImage* image = [UIImage imageWithData:imageData];
+    
+    NSString *summary = [store objectForKey:@"summary"];
+    self.moiveImage.image = image;
+    self.description.text = summary;
 }
 
 - (void)didReceiveMemoryWarning

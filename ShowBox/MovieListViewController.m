@@ -50,7 +50,7 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.title = @"my table";
+    self.title = @"Moive List";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -96,6 +96,17 @@
 
     cell.movieImage.image = image;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MovieCell *cell = (MovieCell *)[tableView cellForRowAtIndexPath:indexPath];
+    UIImage *image = cell.movieImage.image;
+    NSString *summary = cell.movieSummary.text;
+    NSUserDefaults *store = [NSUserDefaults standardUserDefaults];
+    [store setObject:UIImagePNGRepresentation(image) forKey:@"image"];
+    [store setObject:summary forKey:@"summary"];
+    [store synchronize];
 }
 
 @end
